@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>ECOMMERCE cart</title>
+  </head>
+  <section class="header">
+    <div class="navbar">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpXBkWGfhwHpl_9tG86GUH3j8xEwXmPaMM6g&usqp=CAU"
+        alt="logo"
+        class="logo"
+      />
+      <ul class="navs">
+        <li>
+          <a><img class="cross" src="cross.png" /></a>
+        </li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="cart.html" class="active">
+            <img class="cart" src="cart.png"
+          /></a>
+        </li>
+      </ul>
+      <div class="smalloptions">
+        <a href="cart.html"> <img class="cart" src="cart.png" /></a>
+        <img class="lines" src="lines.png" />
+      </div>
+    </div>
+  </section>
+  <section
+    class="shopbanner"
+    style="background-image: url(cartbanner.jpg)"
+  ></section>
+  <section class="table">
+    <table class="carttable">
+      <thead>
+        <tr>
+          <td>Remove</td>
+          <td>Product</td>
+          <td>Product Name</td>
+          <td>Price</td>
+          <td>Quantity</td>
+          <td>SubTotal</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><i class="fa fa-remove"></i></td>
+          <td><img src="maybelline/m2.jpg" class="image" /></td>
+          <td>Maybelline pink</td>
+          <td><i class="fa-solid fa-indian-rupee-sign"></i>569</td>
+          <td><input type="number" value="1" class="inputbox" /></td>
+          <td><i class="fa-solid fa-indian-rupee-sign"></i>569</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-remove"></i></td>
+          <td><img src="elf/elf2.jpeg" class="image" /></td>
+          <td>Elf nude</td>
+          <td><i class="fa-solid fa-indian-rupee-sign"></i>6569</td>
+          <td><input type="number" value="1" class="inputbox" /></td>
+          <td><i class="fa-solid fa-indian-rupee-sign"></i>6569</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-remove"></i></td>
+          <td><img src="loreal/l2.jpg" class="image" /></td>
+          <td>loreal reddish</td>
+          <td><i class="fa-solid fa-indian-rupee-sign"></i>469</td>
+          <td><input type="number" value="1" class="inputbox" /></td>
+          <td><i class="fa-solid fa-indian-rupee-sign"></i>469</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-remove"></i></td>
+          <td><img src="facescanada/fc4.jpg" class="image" /></td>
+          <td>facescanada dusky</td>
+          <td><i class="fa-solid fa-indian-rupee-sign"></i>690</td>
+          <td><input type="number" value="1" class="inputbox" /></td>
+          <td><i class="fa-solid fa-indian-rupee-sign"></i>690</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-remove"></i></td>
+          <td><img src="bb/bb2.jpg" class="image" /></td>
+          <td>bobbi brown brown</td>
+          <td><i class="fa-solid fa-indian-rupee-sign"></i>5569</td>
+          <td><input type="number" value="1" class="inputbox" /></td>
+          <td><i class="fa-solid fa-indian-rupee-sign"></i>5569</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="amount">
+    <div class="coupon">
+      <h3>Coupon Apply:</h3>
+      <div class="apply">
+        <input type="text" placeholder="Enter coupon code" class="input" />
+        <button class="submit">Apply</button>
+      </div>
+    </div>
+    <div class="orderdetails">
+      <h4>Cart Total:</h4>
+      <table class="totaltable">
+        <tbody>
+          <tr>
+            <td>cart total</td>
+            <td><i class="fa-solid fa-indian-rupee-sign"></i>10569</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>free</td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td>
+              <strong
+                ><i class="fa-solid fa-indian-rupee-sign"></i>10569</strong
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="pay">Proceed to CheckOut</button>
+    </div>
+  </section>
+  <script src="home.js"></script>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>ECOMMERCE help</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="navbar">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpXBkWGfhwHpl_9tG86GUH3j8xEwXmPaMM6g&usqp=CAU"
+          alt="logo"
+          class="logo"
+        />
+        <ul class="navs">
+          <li>
+            <a><img class="cross" src="cross.png" /></a>
+          </li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="help.html" class="active">Help</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html"> <img class="cart" src="cart.png" /></a>
+          </li>
+        </ul>
+        <div class="smalloptions">
+          <a href="cart.html"> <img class="cart" src="cart.png" /></a>
+          <img class="lines" src="lines.png" />
+        </div>
+      </div>
+    </section>
+    <section
+      class="shopbanner"
+      style="background-image: url(helpbanner.jpg)"
+    ></section>
+    <section class="helpcenter">
+      <h4>Help</h4>
+      <form class="help">
+        <input type="email" placeholder="Email" class="edit" />
+        <input type="date" class="edit" placeholder="date" />
+        <select class="edit">
+          <option>select the issue</option>
+          <option>placed to wrong address</option>
+          <option>placed wrong product</option>
+          <option>change of plans</option>
+          <option>bad product experience</option>
+        </select>
+        <textarea
+          placeholder="write detail problem(optional)"
+          class="edit"
+        ></textarea>
+        <button class="submitbutton">Submit</button>
+      </form>
+    </section>
+  </body>
+  <script src="home.js"></script>
+</html>
